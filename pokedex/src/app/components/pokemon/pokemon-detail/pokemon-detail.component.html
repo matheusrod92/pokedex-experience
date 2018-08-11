@@ -1,3 +1,13 @@
-<p>
-  pokemon-detail works!
-</p>
+<div class="container">
+  <div *ngIf="!pokemon">
+    Carregando...
+  </div>
+  <div *ngIf="pokemon">
+    <p>Id: {{pokemon.id}}</p>
+    <p>Nome: {{pokemon.name}}</p>
+    <p>Altura: {{pokemon.height}}</p>
+    <div>
+      <img [src]="pokemon.image" [alt]="pokemon.name">
+    </div>
+  </div>
+</div>

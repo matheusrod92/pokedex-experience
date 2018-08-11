@@ -14,9 +14,16 @@ export class PokemonService {
     private http: HttpClient) { }
 
   getPokemons(): Observable<Pokemon[]>  {
-    return this.http.get<Pokemon[]>(this.url + '?limit=3&offset=143')
+    return this.http.get<Pokemon[]>(this.url + '?limit=9&offset=143')
     .pipe(
-      catchError(this.handleError('getHeroes', []))
+      catchError(this.handleError('pokemons', []))
+    );
+  }
+
+  getPokemon(nameOrId: string): Observable<any>  {
+    return this.http.get<Pokemon[]>(this.url + nameOrId)
+    .pipe(
+      catchError(this.handleError('pokemons', []))
     );
   }
 
