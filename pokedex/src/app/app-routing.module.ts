@@ -7,6 +7,7 @@ const routes = [
   {path: 'index', component: IndexComponent},
   {path: '', redirectTo: '/index', pathMatch: 'full' },
   {path: 'pokemon', component: PokemonComponent},
+  {path: 'pokemon/:id', component: PokemonComponent},
 ];
 
 @NgModule({
