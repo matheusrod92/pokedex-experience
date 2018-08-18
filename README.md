@@ -1,4 +1,4 @@
-# Pokédex
+# Pokédex 
 
 Neste "assignment" vocês deverão criar uma pokedéx semelhante a do site https://www.pokedex.org/ para listar pokemons e seus detalhes! O intuito dessa dinâmica é fazer com que você crie diferentes componentes e reutilize os mesmos.
 
